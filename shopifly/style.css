@@ -1,0 +1,325 @@
+
+
+.header1{
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(12 , 50px);
+    
+    }
+.logop{
+    padding: 10px;
+    font-size: 3rem;
+    
+    
+}
+
+.h1-z{
+    font-size: 5.5rem;
+    color: cornsilk;
+    font-weight: bold;
+    padding-top: 2rem;
+}
+.two-z{
+    font-size: 3rem;
+    color: cornsilk;
+    padding: 1rem;
+}
+.form-input{
+    width: 500px;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    outline:none;
+}
+
+ .btn-v:hover{
+     background-color: #faca39;
+     
+ }
+
+   .btn-v{
+    width: 500px;
+    height: 50px; 
+    color: #fff;
+    background-color: #ffba00;
+    border:none;
+    outline: none;
+ }
+     
+      
+    .form-span{
+        color: #fff;
+        font-size: 1.3rem;
+       text-align: center;
+    }
+    .z11{
+        padding: 7rem;
+    }
+
+
+    /* // волнааrgb(99, 102, 253) */
+    .z1 {
+        margin: 0;
+        padding: 0;
+        background: #05ace4; 
+    }
+    .z22 {
+        margin-bottom: 5rem;
+    }
+      
+      .header-w {
+   
+        background: url("img/wave_top.png") no-repeat;
+        background-size: contain;
+        height: 140px;
+       
+        background-size: 100%; }
+      
+/*       
+      карточки  */
+      .container-card {
+        cursor: pointer;
+       margin-top: 5rem;
+       padding: 2rem;
+       height: 350px;
+       display: grid;
+       grid-template-columns: repeat(3 ,1fr);
+       grid-column-gap:20px;
+       grid-row-gap:1em;
+       
+        
+    }
+    
+    /* On mouse-over, add a deeper shadow */
+    .card:hover {
+        box-shadow: 0 10px 16px 0 rgba(106, 97, 233, 0.2);
+    }
+    
+    /* Add some padding inside the card container */
+    .card {
+        text-align: center;
+        padding: 2px 16px;
+    }
+    .card-1-p{
+   font-size: 2rem;
+   color: darkgray;
+   text-align: center;
+   padding: 2rem;
+    }
+  
+    .card-1-s{
+font-size: 3rem;
+font-weight:bold;
+color: #05ace4;
+    }
+
+    /* Иконки  */
+    .icon{
+        margin-top: 10rem;
+        padding: 2rem;
+        display: grid;
+        grid-template-columns: repeat(3 ,1fr);
+        grid-column-gap:20px;
+        grid-row-gap:3em;
+        height: 400px;
+        text-align: center;
+    }
+   .h3-icon{
+       padding: 1rem;
+       font-size: 2rem;
+       font-weight:bold;
+   }
+   .item-p{
+       font-size: 15px;
+       padding: 28px;
+   }
+   .item-pp{
+    font-size: 15px;
+    padding: 15px;
+    text-align: center;
+}
+
+/* foooterrr */
+.logo-footer{
+    display:grid;
+    justify-content : center;
+    padding: 5rem;
+}
+
+.fff{
+    text-align: center;
+    
+}
+.footer-p{
+        font-size: 2.6rem;
+        padding: 2rem;
+    }
+.footer-s{
+    display: block;
+    font-size: 1.3rem;
+    font-weight:bold;
+    color: rgb(85, 84, 84);
+    padding-bottom: 3rem;
+    
+}
+.btn-2{
+width: 300px;
+}
+.but{
+    padding-top: 13rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3 ,4fr);
+}
+
+.line {
+    
+    margin-top: 1.4rem;
+	height: 1px;
+	background: #979595;
+    opacity: 0.4;
+   margin-top: 5rem;
+}
+
+/* слайдерр */
+@media screen and (max-width: 768px) {
+    .header-w{
+        /* display: none; */
+        height:70px ;
+    }
+    .logo-footer{
+        display: none;
+    }
+    .fff{
+        padding-top: 30rem;
+    }
+    
+}
+
+
+@media screen and (max-width: 425px) {
+    .header-w{
+        display: none;
+        
+    }
+    .logo-footer{
+        display: none;
+    }
+}
+@media(min-width :768px){
+    .header-w{
+        /* display: none; */
+        height:95px ;
+    }
+    
+}
+@media(min-width :991px){
+    .header-w{
+        /* display: none; */
+        height:150px ;
+    }
+    
+}
+
+
+
+/* Модалка  */
+
+.modal-overlay {
+    position: fixed;
+    padding-top: 300px;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;  
+    background: rgba(0, 0, 0, .5);
+    transition: background 2s ease-in;
+
+}
+        
+.modal-window{
+    animation-name: animate;
+
+    animation-duration: 0.8s;
+    padding: 30px;
+    height: 380px;
+    width: 600px;
+    border-radius: 5px;
+    background:#fff;
+   margin: 0px  auto ;
+   /* чтобы выпригивали сверху */
+   transform: translateY(-200px);
+   /* чтобы сделать его более плавным  */
+   transition: transform .2s ease-in;
+}
+.modal-header{
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #eee;
+}
+
+.modal-title {
+    font-size: 1.8rem;
+    
+}
+
+.modal-close {
+    cursor: pointer;
+    
+}
+
+.modal-body {
+    padding: 10px;
+}
+.modal-footer{
+    border-top: 1px solid #eee;
+    padding: 5px 10px;
+}
+
+.modal-btn{
+    padding: 15px;
+    width: 200px;
+    color: #fff;
+    border:none;
+    background-color: #ffba00;
+   
+    
+    }
+  
+      .modal-btn:hover {
+        cursor: pointer;
+        background-color: #fdcc43;
+        color: #0a0a0a;
+        border:none;
+       
+      }
+
+
+    .fade-block {
+        display: none;
+    }
+    
+    .fade-block--v{
+        display: block;
+    }
+    
+   .form-input{
+       padding: 3rem;
+   }
+    .btn-dark{
+        padding: 2px;
+        /* padding-left: 20px; */
+        margin-top: -40px;
+        margin-right: -40px;
+        font-size: 30px;
+    }
+
+
+
+
+    @keyframes animate {
+        from {top:-320px; opacity:0}
+        to {top:0; opacity:1}
+      }
